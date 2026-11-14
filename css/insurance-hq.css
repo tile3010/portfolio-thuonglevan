@@ -1,0 +1,426 @@
+/* =========================================================
+   INSURANCE HQ DASHBOARD — PAGE-SPECIFIC STYLES
+   Add as: css/insurance-hq.css
+   Shared styles remain in css/style.css
+   ========================================================= */
+
+.insurance-dashboard .insurance-overview {
+    padding-bottom: 10px;
+}
+
+.insurance-dashboard .insurance-overview-copy {
+    max-width: 850px;
+    margin: 28px 0 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* Website cards */
+.insurance-dashboard .website-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.insurance-dashboard .website-card .project-tags {
+    margin-top: 8px;
+    margin-bottom: 22px;
+}
+
+.insurance-dashboard .website-card .project-link {
+    margin-top: auto;
+}
+
+/* Performance panels */
+.insurance-dashboard .website-performance {
+    margin-top: 30px;
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--bg-secondary);
+}
+
+.insurance-dashboard .website-performance + .website-performance {
+    margin-top: 30px;
+}
+
+.insurance-dashboard .website-performance-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.insurance-dashboard .website-performance-heading h3 {
+    margin: 8px 0 0;
+    color: var(--text-primary);
+    font-size: 20px;
+}
+
+.insurance-dashboard .website-performance .dashboard-chart-placeholder {
+    margin-top: 22px;
+}
+
+/* Technical introduction and issue tags */
+.insurance-dashboard .technical-intro {
+    max-width: 850px;
+    margin: 0 0 25px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.insurance-dashboard .technical-issue-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 22px;
+}
+
+.insurance-dashboard .technical-issue-tags span,
+.insurance-dashboard .case-study-tags span {
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--accent-light);
+    font-size: 10px;
+}
+
+/* Snapshot evidence and historical audit visualizations */
+.insurance-dashboard .insurance-rank-chart {
+    margin-top: 19px;
+    padding: 22px 24px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--bg-secondary);
+}
+.insurance-dashboard .insurance-chart-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+.insurance-dashboard .insurance-chart-heading strong { display: block; margin-top: 6px; color: var(--text-primary); font-size: 16px; }
+.insurance-dashboard .insurance-chart-heading small { color: var(--text-secondary); font-size: 10px; }
+.insurance-dashboard .insurance-rank-rows { display: grid; gap: 14px; }
+.insurance-dashboard .insurance-rank-rows > div {
+    display: grid;
+    grid-template-columns: minmax(170px, 1.1fr) minmax(100px, 2fr) 38px;
+    gap: 14px;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 11px;
+}
+.insurance-dashboard .insurance-rank-rows i,
+.insurance-dashboard .audit-progress {
+    display: block;
+    height: 7px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: rgba(255,255,255,.08);
+}
+.insurance-dashboard .insurance-rank-rows i b {
+    display: block;
+    width: var(--rank-strength);
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg,#2563eb,#75b3ff);
+}
+.insurance-dashboard .insurance-rank-rows strong { color: var(--accent-light); font-size: 13px; }
+.insurance-dashboard .insurance-rank-chart > p { margin-top: 16px; color: var(--text-secondary); font-size: 10px; }
+.insurance-dashboard .audit-progress { height: 4px; margin: 9px 0 7px; }
+.insurance-dashboard .audit-progress i { display: block; width: var(--audit-progress); height: 100%; border-radius: inherit; background: #58c99a; }
+.insurance-dashboard .insurance-evidence-summary {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 14px;
+}
+.insurance-dashboard .insurance-evidence-summary article {
+    min-width: 0;
+    padding: 21px 23px;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    background: var(--bg-card);
+}
+.insurance-dashboard .evidence-summary-label { display: block; color: var(--accent-light); font-size: 9px; font-weight: 700; letter-spacing: .8px; }
+.insurance-dashboard .insurance-evidence-summary article > strong { display: block; margin: 17px 0 6px; color: var(--text-primary); font-size: clamp(22px,3vw,30px); }
+.insurance-dashboard .insurance-evidence-summary p { color: var(--text-secondary); font-size: 12px; line-height: 1.65; }
+.insurance-dashboard .insurance-evidence-summary small { display: block; margin-top: 12px; color: #8290a4; font-size: 9px; line-height: 1.6; }
+.insurance-dashboard .insurance-evidence-outcome { border-color: var(--border-accent) !important; background: linear-gradient(145deg,rgba(59,130,246,.11),transparent 70%),var(--bg-card) !important; }
+.insurance-dashboard .insurance-evidence-outcome > strong { color: #8dbdff !important; }
+.insurance-dashboard .insurance-evidence-gallery { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 15px; margin-top: 24px; }
+.insurance-dashboard .insurance-evidence-image { min-width: 0; overflow: hidden; border: 1px solid var(--border); border-radius: 13px; background: var(--bg-card); }
+.insurance-dashboard .insurance-evidence-image a { display: grid; place-items: center; min-height: 250px; padding: 8px; background: #0c1016; }
+.insurance-dashboard .insurance-evidence-image img { display: block; width: 100%; height: 330px; object-fit: contain; }
+.insurance-dashboard .insurance-evidence-audit { grid-column: 1 / -1; }
+.insurance-dashboard .insurance-evidence-audit a { min-height: 0; }
+.insurance-dashboard .insurance-evidence-audit img { height: auto; max-height: 440px; }
+.insurance-dashboard .insurance-evidence-image figcaption { display: grid; gap: 6px; padding: 14px 16px 16px; }
+.insurance-dashboard .insurance-evidence-image figcaption strong { color: var(--text-primary); font-size: 12px; }
+.insurance-dashboard .insurance-evidence-image figcaption span { color: var(--text-secondary); font-size: 10px; line-height: 1.6; }
+.insurance-dashboard .insurance-evidence-note { margin-top: 15px; color: var(--text-secondary); font-size: 10px; line-height: 1.7; }
+
+/* Case study */
+.insurance-dashboard .case-study-block {
+    margin-bottom: 18px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--bg-card);
+}
+
+.insurance-dashboard .case-study-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.insurance-dashboard .case-study-number {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+    background: rgba(59, 130, 246, 0.12);
+    color: var(--accent-light);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.insurance-dashboard .case-study-heading .dashboard-label {
+    margin-bottom: 7px;
+    font-size: 10px;
+}
+
+.insurance-dashboard .case-study-heading h3 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.insurance-dashboard .case-study-block > p {
+    max-width: 900px;
+    margin: 0 0 14px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.insurance-dashboard .case-study-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.insurance-dashboard .case-study-list {
+    margin: 15px 0 0;
+    padding-left: 20px;
+}
+
+.insurance-dashboard .case-study-list li {
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.insurance-dashboard .case-study-list li::marker {
+    color: var(--accent-light);
+}
+
+.insurance-dashboard .case-study-results {
+    border-color: var(--border-accent);
+}
+
+/* ACTIVE NAVIGATION INDICATOR */
+.insurance-dashboard .dashboard-nav {
+    position: relative;
+}
+
+.insurance-dashboard .dashboard-nav::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: var(--dtc-indicator-left, 0px);
+    width: var(--dtc-indicator-width, 0px);
+    height: 3px;
+    border-radius: 3px 3px 0 0;
+    background: #5da2ff;
+    opacity: var(--dtc-indicator-opacity, 0);
+    transition: left .32s ease, width .32s ease, opacity .2s ease;
+    pointer-events: none;
+}
+
+.insurance-dashboard .dashboard-nav a {
+    position: relative;
+    transition: color 0.25s ease;
+}
+
+.insurance-dashboard .dashboard-nav a.active {
+    color: #fff;
+}
+
+.insurance-dashboard .dashboard-nav a {
+    white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+    .insurance-dashboard .project-dashboard-header .project-dashboard-container {
+        min-height: 0;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 10px;
+        padding-block: 12px 8px;
+    }
+
+    .insurance-dashboard .dashboard-nav {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 22px;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scrollbar-width: none;
+    }
+
+    .insurance-dashboard .dashboard-nav::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .insurance-dashboard .project-dashboard-header .project-dashboard-container {
+        align-items: center;
+    }
+
+    .insurance-dashboard .dashboard-logo {
+        align-self: center;
+    }
+
+    .insurance-dashboard .dashboard-nav {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 22px;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scrollbar-width: none;
+        padding-bottom: 0;
+    }
+
+    .insurance-dashboard .dashboard-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .insurance-dashboard [id] {
+        scroll-margin-top: 180px;
+    }
+}
+
+@media (max-width: 700px) {
+    .insurance-dashboard .dashboard-nav::after { height: 2px; }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .insurance-dashboard .website-performance {
+        padding: 18px;
+    }
+
+    .insurance-dashboard .website-performance-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .insurance-dashboard .case-study-block {
+        padding: 20px;
+    }
+
+    .insurance-dashboard .case-study-heading {
+        gap: 12px;
+    }
+
+    .insurance-dashboard .case-study-heading h3 {
+        font-size: 17px;
+    }
+
+}
+
+
+/* Additional dashboard sections: keyword rankings, audit resolution and content workflow */
+.insurance-dashboard .keyword-table-wrapper,
+.insurance-dashboard .technical-resolution-block,
+.insurance-dashboard .content-optimization-summary {
+    margin-top: 28px;
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--bg-secondary);
+}
+.insurance-dashboard .keyword-table-heading {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 16px; margin-bottom: 18px;
+}
+.insurance-dashboard .keyword-table-heading h3,
+.insurance-dashboard .content-optimization-summary h3 {
+    margin: 8px 0 0; color: var(--text-primary); font-size: 18px;
+}
+.insurance-dashboard .keyword-table-scroll { overflow-x: auto; }
+.insurance-dashboard .keyword-performance-table {
+    width: 100%; border-collapse: collapse; min-width: 560px;
+}
+.insurance-dashboard .keyword-performance-table th,
+.insurance-dashboard .keyword-performance-table td {
+    padding: 13px 14px; border-bottom: 1px solid var(--border);
+    text-align: left; color: var(--text-secondary); font-size: 12px;
+}
+.insurance-dashboard .keyword-performance-table th {
+    color: var(--text-primary); font-size: 11px; text-transform: uppercase;
+}
+.insurance-dashboard .keyword-performance-table td strong { color: var(--text-primary); }
+.insurance-dashboard .ranking-position { color: var(--accent-light); font-weight: 800; font-size: 16px; }
+.insurance-dashboard .ranking-position.top-10 { color: #4ade80; }
+.insurance-dashboard .keyword-data-note { margin-top: 14px; color: var(--text-secondary); font-size: 11px; line-height: 1.7; }
+.insurance-dashboard .technical-resolution-grid {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 20px;
+}
+.insurance-dashboard .technical-resolution-grid article {
+    padding: 17px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
+}
+.insurance-dashboard .technical-resolution-grid span,
+.insurance-dashboard .technical-resolution-grid small { display: block; color: var(--text-secondary); font-size: 11px; line-height: 1.6; }
+.insurance-dashboard .technical-resolution-grid strong { display: block; margin: 10px 0 5px; color: var(--accent-light); font-size: 20px; }
+.insurance-dashboard .content-optimization-steps {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 20px;
+}
+.insurance-dashboard .content-optimization-steps > div { padding: 18px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg-card); }
+.insurance-dashboard .content-optimization-steps strong { color: var(--text-primary); font-size: 13px; }
+.insurance-dashboard .content-optimization-steps p { margin-top: 8px; color: var(--text-secondary); font-size: 12px; line-height: 1.7; }
+@media (max-width: 900px) { .insurance-dashboard .technical-resolution-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+    .insurance-dashboard .keyword-table-wrapper,
+    .insurance-dashboard .technical-resolution-block,
+    .insurance-dashboard .content-optimization-summary { padding: 17px; }
+    .insurance-dashboard .technical-resolution-grid,
+    .insurance-dashboard .content-optimization-steps { grid-template-columns: 1fr; }
+    .insurance-dashboard .keyword-table-heading { align-items: flex-start; flex-direction: column; }
+    .insurance-dashboard .insurance-chart-heading { align-items: flex-start; flex-direction: column; }
+    .insurance-dashboard .insurance-rank-rows > div { grid-template-columns: minmax(115px,1fr) minmax(65px,1.2fr) 32px; gap:8px; font-size:9px; }
+    .insurance-dashboard .insurance-evidence-summary { grid-template-columns:1fr; }
+    .insurance-dashboard .insurance-evidence-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 600px) {
+    .insurance-dashboard .insurance-evidence-gallery { grid-template-columns:1fr; }
+    .insurance-dashboard .insurance-evidence-image img { height:320px; }
+    .insurance-dashboard .insurance-evidence-audit img { height:auto; }
+}
+

@@ -1,0 +1,6 @@
+# Local and operating system files
+.tmp/
+tmp/
+.DS_Store
+Thumbs.db
+Desktop.ini

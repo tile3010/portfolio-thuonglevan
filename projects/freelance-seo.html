@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wingolf website rebuild case study: legacy SEO and UX diagnosis, issue reporting, silo planning, and UI/UX and development coordination.">
+    <title>Wingolf Website Rebuild | Thuong Le Van</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/freelance-seo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="freelance-dashboard">
+    <header class="project-dashboard-header">
+        <div class="project-dashboard-container">
+            <a href="../index.html" class="dashboard-logo">THUONG<span>.</span></a>
+            <nav class="dashboard-nav" aria-label="Main navigation">
+                <a href="../index.html">Portfolio</a>
+                <a href="#overview">Overview</a>
+                <a href="#diagnosis">Diagnosis</a>
+                <a href="#rebuild">Rebuild plan</a>
+                <a href="#evidence">Technical evidence</a>
+            <button type="button" class="language-switch" data-language-switch aria-label="Switch to Vietnamese" aria-pressed="false"><span class="language-switch-static language-switch-en">EN</span><span class="language-switch-static language-switch-vi">VI</span><span class="language-switch-thumb"><span data-language-current>EN</span></span></button>
+            </nav>
+        </div>
+    </header>
+    <main class="project-dashboard">
+        <div class="project-dashboard-container">
+            <section id="overview" class="freelance-overview wingolf-hero">
+                <div class="dashboard-breadcrumb"><a href="../index.html">Portfolio</a><span>/</span><span>Freelance SEO</span><span>/</span><span>Wingolf</span></div>
+                <div class="wingolf-hero-grid">
+                    <div>
+                        <span class="dashboard-label">WINGOLF · WEBSITE REBUILD CASE STUDY</span>
+                        <h1>When the legacy site<br><em>couldn’t be fixed forward</em></h1>
+                        <p class="wingolf-hero-lede">I audited the existing booking and travel website, translated technical and user-facing failures into a developer issue log, and helped shape the decision to rebuild around a clearer SEO silo structure.</p>
+                        <div class="wingolf-hero-actions">
+                            <a class="wingolf-primary-link" href="#diagnosis">Explore the case <span>↓</span></a>
+                            <a class="wingolf-secondary-link" href="https://wingolf.com.vn/" target="_blank" rel="noopener noreferrer">Visit website <span>↗</span></a>
+                        </div>
+                    </div>
+                    <aside class="wingolf-case-summary">
+                        <span class="wingolf-summary-kicker">MY ROLE</span>
+                        <strong>SEO planning<br>&amp; project coordination</strong>
+                        <p>Worked with UI/UX and development to connect site structure, page requirements, and QA findings.</p>
+                        <div class="wingolf-summary-divider"></div>
+                        <div class="wingolf-summary-stats">
+                            <div><b>11</b><span>logged findings</span></div>
+                            <div><b>8</b><span>planned site silos</span></div>
+                            <div><b>7</b><span>planned delivery steps</span></div>
+                        </div>
+                        <small>Counts describe the documented project scope. The legacy findings were addressed in the completed rebuild.</small>
+                    </aside>
+                </div>
+                <div class="wingolf-story-rail" aria-label="Project story"><span class="is-current">01 <b>Diagnose</b></span><i></i><span>02 <b>Report</b></span><i></i><span>03 <b>Rebuild</b></span><i></i><span>04 <b>Validate</b></span></div>
+            </section>
+
+            <section class="dashboard-section" id="diagnosis">
+                <div class="dashboard-section-heading"><div><span class="dashboard-label">01 · LEGACY SITE DIAGNOSIS</span><h2>Several connected failures made the old site hard to trust</h2></div><span class="dashboard-source">Historical review · Wingolf issue tracker</span></div>
+                <p class="wingolf-section-lede">The problems were not limited to page titles. URL behavior, indexability, language routing, booking flows and account access affected both search discovery and the customer journey.</p>
+                <div class="wingolf-issue-grid">
+                    <article class="wingolf-issue-card"><span class="wingolf-issue-icon">URL</span><div><h3>Unstable URL patterns</h3><p>Booking URLs exposed search and filter parameters. Duplicate slash paths also returned a successful page response instead of consistently resolving to one clean URL.</p><small>SEO impact · Duplicate or low-value URL variants complicate crawling and canonical signals.</small></div></article>
+                    <article class="wingolf-issue-card"><span class="wingolf-issue-icon">AUTH</span><div><h3>Login and booking friction</h3><p>The legacy account/login flow created a user-facing blocker during the booking journey, alongside static or inconsistent booking paths.</p><small>Source · Login flow is based on my project-side observation; it is not a separately quantified row in the saved tracker.</small></div></article>
+                    <article class="wingolf-issue-card"><span class="wingolf-issue-icon">LANG</span><div><h3>Language routing did not stay aligned</h3><p>Localized URLs, language switching and hreflang relationships were inconsistent across the Vietnamese, English, Chinese and Korean experiences.</p><small>SEO impact · Search engines and visitors could receive mismatched language versions.</small></div></article>
+                    <article class="wingolf-issue-card"><span class="wingolf-issue-icon">CRAWL</span><div><h3>Technical discovery gaps</h3><p>The review flagged missing robots.txt and XML sitemap files, plus broken image links and rendering or interaction defects that needed developer attention.</p><small>SEO impact · Weaker crawl guidance and an incomplete page experience.</small></div></article>
+                </div>
+                <div class="wingolf-decision"><div class="wingolf-decision-mark">↗</div><div><span class="dashboard-label">THE PROJECT DECISION</span><h3>Move from repeated patches to a planned rebuild</h3><p>After the legacy issues remained unresolved through the available development work, I recommended moving forward with a new website plan. The aim was to address URL rules, language structure, booking journeys and SEO requirements in the design and build brief from the start.</p></div></div>
+            </section>
+
+            <section class="dashboard-section" id="reporting">
+                <div class="dashboard-section-heading"><div><span class="dashboard-label">02 · ISSUE REPORTING</span><h2>Turn observations into developer-ready work</h2></div></div>
+                <div class="wingolf-report-layout">
+                    <div class="wingolf-report-copy"><p>Each finding was recorded with a reproducible example and a clear next action, so the conversation could move from “something looks wrong” to a fix that could be reviewed.</p><div class="wingolf-report-flow"><div><b>01</b><strong>Capture</strong><span>URL, screenshot or page state</span></div><div><b>02</b><strong>Explain impact</strong><span>Indexing, language or booking effect</span></div><div><b>03</b><strong>Request a change</strong><span>Expected URL, behavior or technical output</span></div><div><b>04</b><strong>Track status</strong><span>Developer response and QA follow-up</span></div></div></div>
+                    <aside class="wingolf-tracker-card"><span class="dashboard-label">PRE-REBUILD ISSUE TRACKER</span><div class="wingolf-tracker-number"><strong>11</strong><span>findings documented</span></div><div class="wingolf-tracker-bar"><span style="width:73%"></span></div><div class="wingolf-tracker-legend"><span><i class="tracker-open"></i>8 marked not fixed at audit</span><span><i class="tracker-unknown"></i>3 with no saved status</span></div><p>This is the legacy-site tracker snapshot from before the rebuild, not the final post-launch status.</p></aside>
+                </div>
+                <div class="wingolf-report-examples">
+                    <article><span>EXAMPLE A · URL &amp; INDEXING</span><h3>Parameterized tee-time search URL</h3><p><b>Observed:</b> a URL with multiple price and time filters was reported as not indexed in Search Console.</p><p><b>Requested direction:</b> define which booking states should be crawlable, then control duplicates and canonical signals.</p></article>
+                    <article><span>EXAMPLE B · CANONICAL URL</span><h3>Repeated slash path returned 200</h3><p><b>Observed:</b> the captured `wingolf.vn///` variant returned HTTP 200.</p><p><b>Requested direction:</b> normalize the URL and redirect alternate forms to one preferred destination.</p></article>
+                    <article><span>EXAMPLE C · LANGUAGE EXPERIENCE</span><h3>Language selection and page path diverged</h3><p><b>Observed:</b> the captured Korean page showed a language selector and route that did not map cleanly to the expected localized experience.</p><p><b>Requested direction:</b> align translated URLs, switcher destinations and reciprocal hreflang.</p></article>
+                </div>
+            </section>
+
+            <section class="dashboard-section" id="evidence">
+                <div class="dashboard-section-heading"><div><span class="dashboard-label">03 · TECHNICAL FINDINGS</span><h2>Critical issues, grouped into reviewable slides</h2></div><span class="dashboard-source">11 tracker items · historical review</span></div>
+                <p class="wingolf-section-lede">Move through the issue groups to see what was observed, why it mattered and what action was reported to development. Critical/high labels summarize the documented impact and my prioritization; they are not scores exported from the tracker.</p>
+                <div class="wingolf-carousel" data-wingolf-carousel aria-roledescription="carousel" aria-label="Wingolf technical issue evidence">
+                    <div class="wingolf-carousel-top"><div class="wingolf-carousel-tabs" role="tablist" aria-label="Issue groups"><button type="button" role="tab" aria-selected="true" data-slide-to="0">01 · URL indexability</button><button type="button" role="tab" aria-selected="false" data-slide-to="1">02 · URL integrity</button><button type="button" role="tab" aria-selected="false" data-slide-to="2">03 · Multilingual SEO</button><button type="button" role="tab" aria-selected="false" data-slide-to="3">04 · Booking journey</button><button type="button" role="tab" aria-selected="false" data-slide-to="4">05 · Crawl &amp; quality</button></div><div class="wingolf-carousel-controls"><span data-slide-count aria-live="polite">01 / 05</span><button type="button" data-slide-prev aria-label="Previous issue group">←</button><button type="button" data-slide-next aria-label="Next issue group">→</button></div></div>
+                    <div class="wingolf-carousel-slides" aria-live="polite">
+                        <article class="wingolf-carousel-slide is-active" role="tabpanel" data-slide="0">
+                            <div class="wingolf-slide-copy"><div class="wingolf-severity-row"><span class="wingolf-severity critical">CRITICAL · INDEXABILITY</span><span class="wingolf-slide-counter">01 / 05</span></div><h3>Default booking filters created crawlable URL variants</h3><p class="wingolf-observation"><b>Observed</b> Tee-time pages exposed time, price and date parameters even before a visitor applied filters. Search Console reported the captured URL as not indexed.</p><div class="wingolf-slide-impact"><b>Why it mattered</b><span>Duplicate URL variants and missing canonical signals could dilute crawl focus and prevent important course pages from being indexed.</span></div><div class="wingolf-slide-action"><b>Reported direction</b><span>Keep default state on a clean URL, process filter values without unnecessary URL variants, and use a canonical URL for the indexable course page.</span></div></div>
+                            <figure class="wingolf-slide-proof"><a href="../assets/images/wingolf-legacy-url-parameters.png" target="_blank" rel="noopener noreferrer"><img src="../assets/images/wingolf-legacy-url-parameters.png" alt="Google Search Console capture of a parameterized Wingolf tee-time URL reported as not indexed."></a><figcaption>Search Console evidence · parameterized tee-time URL reported as not indexed</figcaption></figure>
+                        </article>
+                        <article class="wingolf-carousel-slide" role="tabpanel" data-slide="1" hidden>
+                            <div class="wingolf-slide-copy"><div class="wingolf-severity-row"><span class="wingolf-severity critical">CRITICAL · URL CANONICALIZATION</span><span class="wingolf-slide-counter">02 / 05</span></div><h3>Malformed paths still returned a successful page</h3><p class="wingolf-observation"><b>Observed</b> The saved redirect trace showed a multi-slash URL returning HTTP 200, creating another path to the same site experience.</p><div class="wingolf-slide-impact"><b>Why it mattered</b><span>Search engines can treat alternate paths as separate URLs, multiplying duplicate pages across the site.</span></div><div class="wingolf-slide-action"><b>Reported direction</b><span>Normalize repeated slashes and permanently redirect alternate forms to the single preferred URL.</span></div></div>
+                            <figure class="wingolf-slide-proof"><a href="../assets/images/wingolf-legacy-multiple-slash-200.png" target="_blank" rel="noopener noreferrer"><img src="../assets/images/wingolf-legacy-multiple-slash-200.png" alt="Wingolf URL with repeated slashes and a redirect trace showing an HTTP 200 response."></a><figcaption>Redirect trace · repeated-slash URL returned HTTP 200</figcaption></figure>
+                        </article>
+                        <article class="wingolf-carousel-slide" role="tabpanel" data-slide="2" hidden>
+                            <div class="wingolf-slide-copy"><div class="wingolf-severity-row"><span class="wingolf-severity critical">CRITICAL · INTERNATIONAL SEO</span><span class="wingolf-slide-counter">03 / 05</span></div><h3>Language pages were not connected as equivalent versions</h3><p class="wingolf-observation"><b>Observed</b> The tracker flagged incorrect language URL structure, missing hreflang and a language switcher that sent visitors to the language home page instead of the equivalent page.</p><div class="wingolf-slide-impact"><b>Why it mattered</b><span>Visitors lost the content they were reading, while search engines lacked consistent signals for localized pages.</span></div><div class="wingolf-slide-action"><b>Reported direction</b><span>Use language folders, map translated page equivalents, and connect them with reciprocal hreflang and page-level language switching.</span></div></div>
+                            <figure class="wingolf-slide-proof"><a href="../assets/images/wingolf-legacy-language-routing.png" target="_blank" rel="noopener noreferrer"><img src="../assets/images/wingolf-legacy-language-routing.png" alt="Historical Korean Wingolf page showing the localized URL and language selector."></a><figcaption>Legacy Korean page · URL and language selector captured during review</figcaption></figure>
+                        </article>
+                        <article class="wingolf-carousel-slide" role="tabpanel" data-slide="3" hidden>
+                            <div class="wingolf-slide-copy"><div class="wingolf-severity-row"><span class="wingolf-severity critical">CRITICAL · BOOKING INTEGRITY</span><span class="wingolf-slide-counter">04 / 05</span></div><h3>Booking paths mixed transactional flows with indexable pages</h3><p class="wingolf-observation"><b>Observed</b> The tracker recorded many static booking URLs as indexable. I also observed login friction in the legacy booking journey.</p><div class="wingolf-slide-impact"><b>Why it mattered</b><span>Search could discover thin transaction pages, while account and booking friction interrupted the path to conversion. The tracker also recorded a critical booking-price integrity concern.</span></div><div class="wingolf-slide-action"><b>Reported direction</b><span>Consolidate checkout into a controlled transaction flow, set appropriate index rules, map old booking URLs, and validate account access and price integrity with development.</span></div><p class="wingolf-redaction">Sensitive booking-integrity reproduction details are intentionally omitted from this public case study.</p></div>
+                            <figure class="wingolf-slide-proof"><a href="../assets/images/wingolf-legacy-indexable-booking-urls.png" target="_blank" rel="noopener noreferrer"><img src="../assets/images/wingolf-legacy-indexable-booking-urls.png" alt="Historical crawl export listing many Wingolf booking URLs as indexable."></a><figcaption>Crawl export · static booking URL patterns appeared indexable</figcaption></figure>
+                        </article>
+                        <article class="wingolf-carousel-slide" role="tabpanel" data-slide="4" hidden>
+                            <div class="wingolf-slide-copy"><div class="wingolf-severity-row"><span class="wingolf-severity high">HIGH · CRAWL &amp; PAGE QUALITY</span><span class="wingolf-slide-counter">05 / 05</span></div><h3>Search guidance and page behavior needed a rebuild checklist</h3><p class="wingolf-observation"><b>Observed</b> The review logged missing robots.txt and XML sitemap, image URLs returning 404, a broken image presentation state, and a “show more” control that navigated away.</p><div class="wingolf-slide-impact"><b>Why it mattered</b><span>Crawlers lacked useful discovery guidance, while visible interaction and image failures weakened the course page experience.</span></div><div class="wingolf-slide-action"><b>Reported direction</b><span>Publish crawl files, repair image paths and fallback display, and expand descriptions in place without interrupting booking.</span></div></div>
+                            <figure class="wingolf-slide-proof"><a href="../assets/images/wingolf-legacy-crawl-controls.png" target="_blank" rel="noopener noreferrer"><img src="../assets/images/wingolf-legacy-crawl-controls.png" alt="Historical site audit showing missing robots.txt, XML sitemap and language configuration findings."></a><figcaption>Technical audit capture · robots.txt, XML sitemap and language findings</figcaption></figure>
+                        </article>
+                    </div>
+                    <div class="wingolf-carousel-bottom"><div class="wingolf-carousel-dots" role="tablist" aria-label="Choose issue group"><button type="button" aria-label="Show URL indexability" aria-selected="true" data-slide-to="0"></button><button type="button" aria-label="Show URL integrity" aria-selected="false" data-slide-to="1"></button><button type="button" aria-label="Show multilingual SEO" aria-selected="false" data-slide-to="2"></button><button type="button" aria-label="Show booking journey" aria-selected="false" data-slide-to="3"></button><button type="button" aria-label="Show crawl and page quality" aria-selected="false" data-slide-to="4"></button></div><span>Use arrows or select an issue group to review the evidence.</span></div>
+                </div>
+                <div class="wingolf-tracker-footnote"><b>Before rebuild:</b> 8 of 11 findings were marked “not fixed” in the saved tracker, and 3 had no status recorded.</div>
+                <div class="wingolf-resolution"><span class="wingolf-resolution-check">✓</span><div><b>Rebuild outcome · Completed</b><p>All 11 legacy findings in the issue tracker were fixed in the new website, including URL and indexing rules, multilingual SEO, booking and login flow, booking integrity, crawl files, images, and page interactions.</p></div><span class="wingolf-resolution-tag">ALL LEGACY ISSUES RESOLVED</span></div>
+                <details class="wingolf-full-log">
+                    <summary><span><small>EXPANDED AUDIT LOG</small><b>View all 11 website findings</b><em>Impact, reported fix direction and rebuild outcome</em></span><i aria-hidden="true">+</i></summary>
+                    <div class="wingolf-log-content">
+                        <p class="wingolf-log-intro">This recruiter-friendly view is based on the original issue spreadsheet. Sensitive reproduction details for the booking-integrity finding are intentionally omitted.</p>
+                        <div class="wingolf-log-scroll"><table><thead><tr><th>#</th><th>Issue group</th><th>Legacy finding</th><th>Why it mattered / reported fix direction</th><th>New site</th></tr></thead><tbody>
+                            <tr><td>01</td><td>URL &amp; indexing</td><td>Default tee-time URLs exposed query parameters.</td><td>Created low-value URL variants and indexation issues. Keep the default page URL clean and apply canonical rules.</td><td><span class="wingolf-resolved-pill">Resolved</span></td></tr>
+                            <tr><td>02</td><td>URL integrity</td><td>Repeated-slash paths returned HTTP 200.</td><td>Allowed duplicate versions of the same page. Normalize paths and redirect variants to one canonical URL.</td><td><span class="wingolf-resolved-pill">Resolved</span></td></tr>
+                            <tr><td>03</td><td>Multilingual SEO</td><td>Language URLs did not use a consistent locale structure.</td><td>Made language targeting and translated page relationships unclear. Rebuild with consistent language folders and page mapping.</td><td><span class="wingolf-resolved-pill">Resolved</span></td></tr>
+                            <tr><td>04</td><td>Multilingual SEO</td><td>Hreflang relationships were missing.</td><td>Search engines lacked signals connecting translated equivalents. Add reciprocal hreflang for matching pages.</td><td><span class="wingolf-resolved-pill">Resolved</span></td></tr>
+                            <tr><td>05</td><td>Language experience</td><td>Language switcher returned visitors to the language homepage.</td><td>Interrupted the journey and lost the equivalent content. Keep visitors on the corresponding translated page.</td><td><span class="wingolf-resolved-pill">Resolved</span></td></tr>
+                            <tr><td>06</td><td>Booking &amp; indexing</td><td>Static checkout URLs were used for dynamic booking steps.</td><td>Created thin transactional URLs for search to discover. Consolidate checkout and apply appropriate index rules and redirects.</td><td><span class="wingolf-resolved-pill">Resolved</span></td></tr>
+                            <tr><td>07</td><td>Crawlability</td><td>robots.txt and XML sitemap were missing.</td><td>Search engines had no clear crawl guidance or submitted sitemap. Add and maintain both files.</td><td><span class="wingolf-resolved-pill">Resolved</span></td></tr>
+                            <tr><td>08</td><td>Page rendering</td><td>Empty image fields showed broken image or alt-text presentation.</td><td>Made content pages look broken when an optional image was absent. Add a clean fallback state.</td><td><span class="wingolf-resolved-pill">Resolved</span></td></tr>
+                            <tr><td>09</td><td>Page interaction</td><td>“Show more” navigated away instead of expanding content.</td><td>Disrupted the course and booking journey. Expand the description in place without reloading.</td><td><span class="wingolf-resolved-pill">Resolved</span></td></tr>
+                            <tr><td>10</td><td>Assets</td><td>Multiple image URLs returned 404.</td><td>Left broken visual assets across pages. Repair image references and verify asset loading.</td><td><span class="wingolf-resolved-pill">Resolved</span></td></tr>
+                            <tr><td>11</td><td>Booking integrity</td><td>A critical booking-price integrity flaw was documented.</td><td>Could affect price accuracy during checkout. Validate booking and payment values server-side. Technical reproduction details are withheld.</td><td><span class="wingolf-resolved-pill">Resolved</span></td></tr>
+                        </tbody></table></div>
+                        <div class="wingolf-log-footer"><span>11 / 11 findings addressed in the completed rebuild</span><span>Legacy tracker: <b>pre-rebuild snapshot</b></span></div>
+                    </div>
+                </details>
+            </section>
+
+            <section class="dashboard-section" id="rebuild">
+                <div class="dashboard-section-heading"><div><span class="dashboard-label">04 · NEW WEBSITE PLAN</span><h2>Build the experience around search intent and user journeys</h2></div><span class="dashboard-source">Master plan · 8 top-level sections</span></div>
+                <p class="wingolf-section-lede">I coordinated with UI/UX and development on a new website direction using the master plan’s silo structure. The plan connects core booking journeys with destination, travel, editorial and company information.</p>
+                <div class="wingolf-silo-map" aria-label="Planned Wingolf website silo architecture">
+                    <div class="wingolf-silo-root"><span>ROOT</span><strong>WINGOLF WEBSITE</strong><small>Shared navigation · clear URL rules · multilingual-ready templates</small></div>
+                    <div class="wingolf-silo-branches">
+                        <article><span>01</span><strong>Home</strong><small>Brand &amp; primary journeys</small></article>
+                        <article><span>02</span><strong>Golf Courses &amp; Tee-Time</strong><small>Discover courses · book a tee time</small></article>
+                        <article><span>03</span><strong>Stay &amp; Play</strong><small>Golf and accommodation packages</small></article>
+                        <article><span>04</span><strong>Golf Tours</strong><small>Tour destinations &amp; itineraries</small></article>
+                        <article><span>05</span><strong>Activities</strong><small>Events and related experiences</small></article>
+                        <article><span>06</span><strong>News</strong><small>Editorial and golf updates</small></article>
+                        <article><span>07</span><strong>About Wingolf</strong><small>Company and trust information</small></article>
+                        <article><span>08</span><strong>Contact</strong><small>Enquiries and conversion paths</small></article>
+                    </div>
+                    <div class="wingolf-silo-footer"><span>SEO FOUNDATION</span><b>Keyword mapping</b><i></i><b>Page intent</b><i></i><b>Internal links</b><i></i><b>Technical requirements</b></div>
+                </div>
+                <div class="wingolf-figma-row"><div><span class="dashboard-label">DESIGN COLLABORATION</span><h3>Structure translated into UI/UX and prototype work</h3><p>Design and prototype references supplied for the new Wingolf experience.</p></div><div class="wingolf-figma-actions"><a href="https://www.figma.com/design/2ljYZc5QawXk2nY2T6tSOX/WINGOLF?node-id=0-1&amp;p=f&amp;t=ZF4QGAt9aXauEGID-0" target="_blank" rel="noopener noreferrer">Open Figma design <span>↗</span></a><a href="https://www.figma.com/proto/2ljYZc5QawXk2nY2T6tSOX/WINGOLF?node-id=101-709&amp;starting-point-node-id=101%3A709" target="_blank" rel="noopener noreferrer">Open interactive prototype <span>↗</span></a></div></div>
+                <div class="wingolf-build-plan"><div class="freelance-subheading"><span class="dashboard-label">05 · DELIVERY PLAN · 3 DEC 2025 — 3 JAN 2026</span><h3>From content inputs to launch checks</h3></div><ol class="freelance-timeline"><li><span>01</span><strong>Content &amp; sample images</strong><small>3 Dec</small></li><li><span>02</span><strong>UI/UX design</strong><small>4–7 Dec</small></li><li><span>03</span><strong>Design review</strong><small>9–10 Dec</small></li><li><span>04</span><strong>Outsourced development</strong><small>11–26 Dec</small></li><li><span>05</span><strong>Website review &amp; feedback</strong><small>27–31 Dec</small></li><li><span>06</span><strong>Deployment</strong><small>1–2 Jan</small></li><li><span>07</span><strong>Final check</strong><small>3 Jan</small></li></ol><p class="dashboard-data-note">The master plan records the delivery sequence. The rebuild was completed, and the legacy issues documented in this case were addressed in the new website.</p></div>
+            </section>
+
+            <div class="dashboard-back"><a href="../index.html#projects">← Back to Projects</a></div>
+        </div>
+    </main>
+    <footer class="dashboard-footer"><p>© 2026 Thuong Le Van. SEO &amp; Digital Marketing Portfolio.</p></footer>
+    <script src="../js/back-to-top.js"></script>
+    <script src="../js/dtcgroup-nav.js"></script>
+    <script src="../js/wingolf-evidence-carousel.js"></script>
+    <script src="../js/language-switcher.js"></script>
+</body>
+</html>
+
+
