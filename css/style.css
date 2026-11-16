@@ -1682,29 +1682,31 @@ body > footer:not(.dashboard-footer) p {
     }
 
     .portrait-placeholder {
-        width: 240px;
-        height: 310px;
+        width: 230px;
+        height: 300px;
     }
 
     .hero-visual {
-        min-height: 390px;
+        min-height: 500px;
     }
 
     .card-traffic {
-        top: 15px;
-        left: -5px;
-        width: 165px;
+        top: 12px;
+        left: -4px;
+        width: 160px;
     }
 
     .card-ranking {
-        right: -5px;
-        bottom: 15px;
+        right: -4px;
+        bottom: 12px;
         width: 175px;
     }
 
     .card-performance {
-        right: -5px;
+        top: 12px;
+        right: -4px;
         width: 130px;
+        transform: none;
     }
 
     .about-intro h2 {
