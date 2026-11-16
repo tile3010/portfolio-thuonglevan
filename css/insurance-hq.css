@@ -304,17 +304,11 @@
     }
 
     .insurance-dashboard .dashboard-nav {
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        gap: 22px;
-        overflow-x: auto;
-        overscroll-behavior-x: contain;
-        scrollbar-width: none;
-        padding-bottom: 0;
-    }
-
-    .insurance-dashboard .dashboard-nav::-webkit-scrollbar {
-        display: none;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        overflow: visible;
+        padding-bottom: 8px;
     }
 
     .insurance-dashboard [id] {
