@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const navRect = nav.getBoundingClientRect();
         const linkRect = link.getBoundingClientRect();
         nav.style.setProperty("--dtc-indicator-left", `${linkRect.left - navRect.left + nav.scrollLeft}px`);
+        nav.style.setProperty("--dtc-indicator-top", `${linkRect.bottom - navRect.top + 2}px`);
         nav.style.setProperty("--dtc-indicator-width", `${linkRect.width}px`);
         nav.style.setProperty("--dtc-indicator-opacity", "1");
         link.classList.add("active");

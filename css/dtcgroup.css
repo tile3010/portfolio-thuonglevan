@@ -209,7 +209,12 @@
     .dtcgroup-dashboard .dashboard-logo { align-self: center; }
     .dtcgroup-dashboard .dashboard-nav { scrollbar-width: none; }
     .dtcgroup-dashboard .dashboard-nav::-webkit-scrollbar { display: none; }
-    .dtcgroup-dashboard .dashboard-nav::after { height: 2px; }
+    .dtcgroup-dashboard .dashboard-nav::after {
+        top: var(--dtc-indicator-top);
+        bottom: auto;
+        height: 2px;
+        transition: top .32s ease, left .32s ease, width .32s ease, opacity .2s ease;
+    }
     .dtcgroup-dashboard .dashboard-section { scroll-margin-top: 126px; }
     .dtcgroup-dashboard .dashboard-title-row h1 { font-size: clamp(27px,7vw,46px); }
     .dtc-overview-actions { align-items: flex-start; flex-direction: column; }

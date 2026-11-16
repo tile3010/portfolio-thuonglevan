@@ -703,6 +703,10 @@ document.addEventListener("DOMContentLoaded", () => {
             "--dtc-indicator-width",
             `${linkRect.width}px`
         );
+        nav.style.setProperty(
+            "--dtc-indicator-top",
+            `${linkRect.bottom - navRect.top + 2}px`
+        );
         nav.style.setProperty("--dtc-indicator-opacity", "1");
 
         links.forEach(item => item.classList.remove("active"));

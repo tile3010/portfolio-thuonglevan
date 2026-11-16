@@ -311,6 +311,12 @@
         padding-bottom: 8px;
     }
 
+    .insurance-dashboard .dashboard-nav::after {
+        top: var(--dtc-indicator-top);
+        bottom: auto;
+        transition: top .32s ease, left .32s ease, width .32s ease, opacity .2s ease;
+    }
+
     .insurance-dashboard [id] {
         scroll-margin-top: 180px;
     }

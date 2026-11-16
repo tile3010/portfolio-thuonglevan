@@ -1018,7 +1018,12 @@ body > footer:not(.dashboard-footer) p {
 }
 
 @media (max-width: 700px) {
-    .foxscore-dashboard .dashboard-nav::after { height: 2px; }
+    .foxscore-dashboard .dashboard-nav::after {
+        top: var(--dtc-indicator-top);
+        bottom: auto;
+        height: 2px;
+        transition: top .32s ease, left .32s ease, width .32s ease, opacity .2s ease;
+    }
 }
 
 .project-dashboard {

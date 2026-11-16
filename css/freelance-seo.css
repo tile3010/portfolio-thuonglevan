@@ -25,7 +25,7 @@
 .freelance-scope-grid p { color:var(--text-secondary); font-size:12px; line-height:1.7; }
 .freelance-dashboard .dashboard-data-note { margin-top:15px; }
 .freelance-dashboard .dashboard-section { scroll-margin-top:100px; }
-@media(max-width:700px) { .freelance-dashboard .project-dashboard-header .project-dashboard-container { align-items:center; } .freelance-dashboard .dashboard-logo { align-self:center; } .freelance-dashboard .dashboard-nav { scrollbar-width:none; } .freelance-dashboard .dashboard-nav::-webkit-scrollbar { display:none; } .freelance-dashboard .dashboard-nav::after { height:2px; } .freelance-dashboard .dashboard-section { scroll-margin-top:126px; } .freelance-project-grid,.freelance-scope-grid { grid-template-columns:1fr; } .freelance-intro { align-items:flex-start; flex-direction:column; gap:8px; } }
+@media(max-width:700px) { .freelance-dashboard .project-dashboard-header .project-dashboard-container { align-items:center; } .freelance-dashboard .dashboard-logo { align-self:center; } .freelance-dashboard .dashboard-nav { scrollbar-width:none; } .freelance-dashboard .dashboard-nav::-webkit-scrollbar { display:none; } .freelance-dashboard .dashboard-nav::after { top:var(--dtc-indicator-top); bottom:auto; height:2px; transition:top .32s ease,left .32s ease,width .32s ease,opacity .2s ease; } .freelance-dashboard .dashboard-section { scroll-margin-top:126px; } .freelance-project-grid,.freelance-scope-grid { grid-template-columns:1fr; } .freelance-intro { align-items:flex-start; flex-direction:column; gap:8px; } }
 @media(prefers-reduced-motion:reduce) { .freelance-dashboard .dashboard-nav::after { transition:none; } }
 
 /* Wingolf rebuild case study */
