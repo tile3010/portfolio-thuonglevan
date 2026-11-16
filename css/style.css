@@ -1563,7 +1563,7 @@ body > footer:not(.dashboard-footer) p {
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 8px 16px;
+        gap: 4px 16px;
         overflow: visible;
         padding-bottom: 8px;
     }
@@ -1684,7 +1684,7 @@ body > footer:not(.dashboard-footer) p {
 @media (max-width: 480px) {
     .project-dashboard-header .dashboard-nav {
         column-gap: 10px;
-        row-gap: 8px;
+        row-gap: 4px;
     }
 
     .project-dashboard-header .dashboard-nav a {
