@@ -4,3 +4,6 @@ tmp/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Dependencies
+node_modules/
