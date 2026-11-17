@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-thuonglevan",
+  "version": "1.0.0",
+  "description": "A responsive portfolio featuring SEO case studies",
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": ["portfolio", "seo"],
+  "author": "Thuong Le Van",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.3.1"
+  }
+}
